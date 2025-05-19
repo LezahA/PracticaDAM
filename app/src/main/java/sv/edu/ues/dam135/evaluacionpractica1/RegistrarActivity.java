@@ -96,7 +96,10 @@ public class RegistrarActivity extends AppCompatActivity {
             editor.apply();
 
             Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
-            finish();
+            edtNombre.setText("");
+            edtEmail.setText("");
+            edtPassword.setText("");
+            edtConfirmarPassword.setText("");
         });
     }
 
