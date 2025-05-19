@@ -7,6 +7,4 @@
         <!-- Atributo para el color del texto del título -->
         <item name="titleTextColor">@color/white</item>
     </style>
-
-    <style name="Theme.EvaluacionPractica1" parent="Base.Theme.EvaluacionPractica1" />
 </resources>
