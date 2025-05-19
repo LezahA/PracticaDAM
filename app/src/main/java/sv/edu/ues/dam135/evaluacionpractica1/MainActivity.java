@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-
+import android.widget.Button;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +29,18 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        Button btnSalir = findViewById(R.id.btnSalir);
+
+        btnSalir.setOnClickListener(v -> {
+            // Confirmar si realmente quiere salir de la applicacion
+            new AlertDialog.Builder(MainActivity.this)
+                    .setTitle("Salir")
+                    .setMessage("¿Deseas salir de la aplicación?")
+                    .setPositiveButton("Sí", (dialog, which) -> finishAffinity())
+                    .setNegativeButton("No", null)
+                    .show();
         });
     }
 
