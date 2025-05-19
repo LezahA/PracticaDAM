@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "¡Bienvenido! Si se pudo", Toast.LENGTH_SHORT).show();
                 //Para mientras
             } else {
-                Toast.makeText(this, "Correo o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Error de usuario o clave invalidos", Toast.LENGTH_SHORT).show();
             }
         });
 
