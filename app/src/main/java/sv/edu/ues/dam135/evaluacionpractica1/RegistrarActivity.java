@@ -27,8 +27,9 @@ public class RegistrarActivity extends AppCompatActivity {
         Button btnRegresar = findViewById(R.id.btnRegresar);
 
         btnRegresar.setOnClickListener(v -> {
-            Intent intent = new Intent(RegistrarActivity.this, MainActivity.class);
-            startActivity(intent);
+            finish(); // Regresa a la actividad anterior
         });
     }
+
+
 }
