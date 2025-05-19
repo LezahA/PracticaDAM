@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnSalir = findViewById(R.id.btnSalir);
 
         btnSalir.setOnClickListener(v -> {
-            // Confirmar si realmente quiere salir de la applicacion
+            // Confirmar si realmente quiere salir de la aplicacion
             new AlertDialog.Builder(MainActivity.this)
                     .setTitle("Salir")
                     .setMessage("¿Deseas salir de la aplicación?")
