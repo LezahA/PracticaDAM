@@ -62,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
 
             if (emailIngresado.equals(emailGuardado) && passIngresado.equals(passGuardado)) {
                 Toast.makeText(this, "¡Bienvenido! Si se pudo", Toast.LENGTH_SHORT).show();
-                //Para mientras
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent);
             } else {
                 Toast.makeText(this, "Error de usuario o clave invalidos", Toast.LENGTH_SHORT).show();
             }
