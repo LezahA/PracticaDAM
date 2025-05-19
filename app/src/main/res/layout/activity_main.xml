@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="82dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="200dp"
+        android:text="User name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/lblpassword"
+        android:layout_width="85dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="60dp"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblUsername" />
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="178dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="52dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Ingrese el Usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblUsername"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="183dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="52dp"
+        android:inputType="textPassword"
+        android:hint="Ingrese el Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblpassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsuario" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="5dp"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="52dp"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnIngresar"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
