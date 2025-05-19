@@ -2,7 +2,6 @@ package sv.edu.ues.dam135.evaluacionpractica1;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -31,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -45,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.menu_register) {
             Intent intent = new Intent(MainActivity.this, RegistrarActivity.class);
             startActivity(intent);
+            return true;
+        }
+
+        if (id == R.id.menu_salir) {
+            finishAffinity();
             return true;
         }
 
